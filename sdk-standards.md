@@ -1,7 +1,5 @@
 # FamilySearch SDK Standards
 
-[TOC]
-
 This document is a working specification for FamilySearch's SDK development and delivery across programming languages.
 
 ## Core Target Languages:
@@ -100,7 +98,7 @@ The SDKs should have a strategy for dealing with rate limiting (throttling). Per
 The SDKs should have a mechanism that allows a developer to set experiment headers for testing pending modifications.
 
 ### Setting the User Agent
-The SDKs should have the SDK library name in the User Agent (including dependent HTTP libraries). This should work according to the HTTP 1.1 spec: [http://tools.ietf.org/html/rfc7231#section-5.5.3](http://tools.ietf.org/html/rfc7231#section-5.5.3)
+The SDKs should have the SDK library name in the User Agent (including dependent HTTP libraries). This should work according to the [HTTP 1.1 spec](http://tools.ietf.org/html/rfc7231#section-5.5.3).
 
 Browsers have a limitation that does not allow the setting of a user agent on the XMLHttpRequest (XHR). 
 
